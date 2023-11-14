@@ -1,0 +1,12 @@
+.spinner-border {
+    width: 100px; 
+    height: 100px;
+    position:fixed;
+    z-index:99;/* make higher than whatever is on the page */
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+
