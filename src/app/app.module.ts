@@ -9,7 +9,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { ReportOneComponent } from './report-one/report-one.component';
 import { HomeComponent } from './home/home.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSelectModule} from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatCardModule} from '@angular/material/card';
+
+
 const appRoutes:Routes=[
 {path:"",component:HomeComponent},
 {path:"reportone",component:ReportOneComponent}
@@ -27,7 +33,12 @@ const appRoutes:Routes=[
     NgbModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    MatSelectModule,
+    MatCardModule,
+    MatFormFieldModule,
+     ReactiveFormsModule,
+    RouterModule.forRoot(appRoutes),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

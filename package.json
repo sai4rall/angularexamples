@@ -9,15 +9,18 @@
     "test": "ng test",
     "newcomponent": "ng g c Home",
     "ngu": "ng update @angular/cli @angular/core --allow-dirty",
-    "addngb": "ng add @ng-bootstrap/ng-bootstrap"
+    "addngb": "ng add @ng-bootstrap/ng-bootstrap",
+    "addm": "ng add @angular/material"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^16.2.0",
+    "@angular/cdk": "~16.2.12",
     "@angular/common": "^16.2.0",
     "@angular/compiler": "^16.2.0",
     "@angular/core": "^16.2.0",
     "@angular/forms": "^16.2.0",
+    "@angular/material": "~16.2.12",
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",

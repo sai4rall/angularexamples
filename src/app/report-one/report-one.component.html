@@ -28,10 +28,17 @@
         <label  for="field6">o3</label>
         <input type="text" id="field6" name="field6" class="form-control" ngModel/>
     </div>
-    <div class="col-3">
+    <div class="col-3" >
         <label for="field7">o4</label>
-        <input type="text" id="field7"  name="field7" class="form-control" ngModel/>
-    </div>
+        <mat-form-field style=" margin-top: 5px;" >
+            <mat-label>Select an option</mat-label>
+            <mat-select  name="field6"  multiple>
+              <mat-option value="1">Option 1</mat-option>
+              <mat-option value="2">Option 2</mat-option>
+              <mat-option value="3">Option 3</mat-option>
+            </mat-select>
+          </mat-form-field>
+            </div>
 </div>
 <div class="row">
     <div class="col-5"></div>
@@ -48,6 +55,7 @@
 </div>
 
 </div>
+<div class="container">
 <table  class="table table-striped table-hover  table-bordered "  *ngIf="dataloaded">
     <thead>
         <tr>
@@ -62,4 +70,7 @@
       </tr>
       </tbody>
   </table>
+
+</div>
+
 

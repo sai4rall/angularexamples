@@ -8,17 +8,9 @@ import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 })
 export class MenuComponent {
   baseURL: string = "https://api.github.com/";
-  dataL=[];
+
   constructor(private http: HttpClient) {
   }
  
 
- 
-  LoadReport1(){
-    this.http.get(this.baseURL + 'users/' + "sai4rall" + '/repos').pipe()
-    .subscribe((data: any) => {
-      console.log(data);
-      this.dataL=data;
-    });
-}
 }

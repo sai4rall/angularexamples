@@ -20,6 +20,7 @@ onSubmit(form: NgForm){
   this.loading=true;
   let searchparams: HttpParams=new HttpParams();
   this.reportData=[];
+  console.log(form.value)
   if(form.value.field0 !== ""){
     searchparams=searchparams.append("field0",form.value.field0);
   }
