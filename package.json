@@ -10,7 +10,8 @@
     "newcomponent": "ng g c Home",
     "ngu": "ng update @angular/cli @angular/core --allow-dirty",
     "addngb": "ng add @ng-bootstrap/ng-bootstrap",
-    "addm": "ng add @angular/material"
+    "addm": "ng add @angular/material",
+    "ngc":"ng generate component select-check-all"
   },
   "private": true,
   "dependencies": {

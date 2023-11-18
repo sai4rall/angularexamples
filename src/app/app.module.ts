@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSelectModule} from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
+import { SelectCheckAllComponent } from './select-check-all/select-check-all.component';
 
 
 const appRoutes:Routes=[
@@ -25,7 +26,8 @@ const appRoutes:Routes=[
     AppComponent,
     MenuComponent,
     ReportOneComponent,
-    HomeComponent
+    HomeComponent,
+    SelectCheckAllComponent
     ],
   imports: [
     BrowserModule,

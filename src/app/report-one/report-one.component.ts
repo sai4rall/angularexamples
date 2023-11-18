@@ -1,6 +1,8 @@
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, ViewChild, booleanAttribute } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { MatOption } from '@angular/material/core';
+import { MatSelect } from '@angular/material/select';
 
 @Component({
   selector: 'app-report-one',
@@ -45,4 +47,21 @@ onSubmit(form: NgForm){
   
 
 }
+allSelected = false;
+
+
+
+
+toggleAllSelection(skillSel: MatSelect) {
+  this.allSelected = !this.allSelected;  // to control select-unselect
+  
+  if (this.allSelected) {
+    skillSel.options.forEach( (item : MatOption) => item.select());
+  } else {
+    skillSel.options.forEach( (item : MatOption) => {item.deselect()});
+  }
+  //skillSel.close();
+}
+
+
 }
