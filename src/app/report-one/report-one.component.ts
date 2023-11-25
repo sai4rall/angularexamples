@@ -23,6 +23,12 @@ export class ReportOneComponent {
 
   constructor(private http: HttpClient){
   }
+  ngAfterViewInit() {
+    this.paginator.page.subscribe(
+       (event) => console.log(event)
+);
+    }
+
 onSubmit(form: NgForm){
   this.dataloaded=false;
   this.loading=true;
