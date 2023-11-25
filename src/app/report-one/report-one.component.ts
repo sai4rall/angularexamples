@@ -2,6 +2,7 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Component, ViewChild, booleanAttribute } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { MatOption } from '@angular/material/core';
+import { MatPaginator } from '@angular/material/paginator';
 import { MatSelect } from '@angular/material/select';
 
 @Component({
@@ -10,6 +11,11 @@ import { MatSelect } from '@angular/material/select';
   styleUrls: ['./report-one.component.css']
 })
 export class ReportOneComponent {
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  length = 1000;
+  pageSize = 10;
+  pageSizeOptions: number[] = [5, 10, 25, 100];
+
   baseURL: string = "https://api.github.com/";
   loading:boolean=false;
   reportData:{id:string,name:string}[]=[];

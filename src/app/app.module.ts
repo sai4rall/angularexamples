@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSelectModule} from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 const appRoutes:Routes=[
@@ -25,8 +26,7 @@ const appRoutes:Routes=[
     AppComponent,
     MenuComponent,
     ReportOneComponent,
-    HomeComponent,
-    
+    HomeComponent    
     ],
   imports: [
     BrowserModule,
@@ -38,6 +38,7 @@ const appRoutes:Routes=[
     MatCardModule,
     MatFormFieldModule,
      ReactiveFormsModule,
+     MatPaginatorModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule
   ],
