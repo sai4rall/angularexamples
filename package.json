@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "newcomponent": "ng g c Home",
+    "newcomponent": "ng g c app-select-all",
     "ngu": "ng update @angular/cli @angular/core --allow-dirty",
     "addngb": "ng add @ng-bootstrap/ng-bootstrap",
     "addm": "ng add @angular/material",

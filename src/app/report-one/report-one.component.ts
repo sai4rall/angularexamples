@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Component, ViewChild, booleanAttribute } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormControl, NgForm } from '@angular/forms';
 import { MatOption } from '@angular/material/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSelect } from '@angular/material/select';
@@ -11,6 +11,8 @@ import { MatSelect } from '@angular/material/select';
   styleUrls: ['./report-one.component.css']
 })
 export class ReportOneComponent {
+values:string[]=["one","two","three"];
+toppings = new FormControl();
   @ViewChild(MatPaginator) paginator: MatPaginator;
   length = 1000;
   pageSize = 10;
@@ -30,6 +32,7 @@ export class ReportOneComponent {
     }
 
 onSubmit(form: NgForm){
+  console.log(this.toppings)
   this.dataloaded=false;
   this.loading=true;
   let searchparams: HttpParams=new HttpParams();

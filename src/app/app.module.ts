@@ -15,6 +15,8 @@ import {MatSelectModule} from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { AppSelectAllComponent } from './app-select-all/app-select-all.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 const appRoutes:Routes=[
@@ -26,7 +28,8 @@ const appRoutes:Routes=[
     AppComponent,
     MenuComponent,
     ReportOneComponent,
-    HomeComponent    
+    HomeComponent,
+    AppSelectAllComponent    
     ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ const appRoutes:Routes=[
     MatFormFieldModule,
      ReactiveFormsModule,
      MatPaginatorModule,
+     MatCheckboxModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule
   ],

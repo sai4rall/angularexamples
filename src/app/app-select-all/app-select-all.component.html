@@ -1,0 +1,7 @@
+<mat-form-field style=" margin-top: 5px;" >
+    <mat-label>Select an option</mat-label>
+    <mat-select #sel  (selectionChange)="isIntermediate(sel,matcheck)"  name="select"   multiple>
+        &nbsp;<mat-checkbox #matcheck  (click)="toggleAllSelection(sel)" value="All items">All items</mat-checkbox>
+        <mat-option *ngFor="let val of matValues" [value]="val">{{val}}</mat-option>
+    </mat-select>
+  </mat-form-field>
